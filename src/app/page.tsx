@@ -1,103 +1,51 @@
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+    <div className="min-h-screen bg-white pt-8 font-sans text-xl font-medium tracking-normal">
+      <Navbar></Navbar>
+      {/* hero section (headline and button) */}
+      <section>
+          <div className="mt-28 flex flex-col items-center gap-12">
+            <h1 className="text-5xl text-[#000000CC] text-center font-semibold">Hi, I'm yassin. I make websites</h1>
+            <button className="bg-transparent border-[2.5px] border-[#00000088] text-[#000000CC] font-semibold h-16 aspect-[3.5] rounded-full transition cursor-pointer">
+                Learn more
+            </button>
+          </div>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <section className="flex flex-col mt-28 gap-8">
+      <div className="flex flex-col justify-start items-center shrink-0 ">
+        <div className="max-w-[800px] w-full pb-16 bg-primary rounded-3xl flex flex-col pt-12 px-12 shrink-0 ">
+          <h2 className=" text-4xl">Projects</h2>
+          <div className="flex items-center gap-4 mt-8 w-full overflow-x-hidden">
+            <div className="bg-white w-64 h-48 shrink-0 rounded-xl"></div>
+            <div className="bg-white w-64 h-48 shrink-0 rounded-xl"></div>
+            <div className="bg-white w-64 h-48 shrink-0 rounded-xl"></div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="flex flex-col justify-start items-center shrink-0 ">
+        <div className="max-w-[800px] w-full pb-16 bg-primary rounded-3xl mb-32 flex flex-col pt-12 px-12 shrink-0 ">
+          <h2 className=" text-4xl">Stuff i use</h2>
+              <div className="grid grid-cols-4 grid-rows-2 gap-x-4 gap-y-4 self-center mt-8 w-fulls overflow-x-hidden">
+                <div className="bg-white w-32 h-32 shrink-0 rounded-xl"></div>
+                <div className="bg-white w-32 h-32 shrink-0 rounded-xl"></div>
+                <div className="bg-white w-32 h-32 shrink-0 rounded-xl"></div>
+                <div className="bg-white w-32 h-32 shrink-0 rounded-xl"></div>
+                <div className="bg-white w-32 h-32 shrink-0 rounded-xl"></div>
+                <div className="bg-white w-32 h-32 shrink-0 rounded-xl"></div>
+                <div className="bg-white w-32 h-32 shrink-0 rounded-xl"></div>
+                <div className="bg-white w-32 h-32 shrink-0 rounded-xl"></div>
+              </div>
+
+        </div>
+      </div>
+      </section>
+
     </div>
+    </>
   );
 }
