@@ -12,8 +12,8 @@ const badgeClass = "flex justify-start gap-6 font-semibold bg-badge py-4 px-6 te
 
       <Navbar/>
 
-      <section className="">
-          <div className="mt-28 py-12 flex flex-col items-center gap-16">
+      <section className="pt-28">
+          <div className=" py-12 flex flex-col items-center gap-16">
             <motion.div className="text-6xl text-text-primary text-center font-semibold">
 
               <AnimHeading>I'm yassin, i make experiences</AnimHeading>
@@ -25,7 +25,7 @@ const badgeClass = "flex justify-start gap-6 font-semibold bg-badge py-4 px-6 te
           </div>
       </section>
 
-      <section className="mt-64 mb-64">
+      <section className="py-64 border-8">
 
         <div className="w-full justify-center flex">
           <motion.h1 className=" text-6xl mx-32 text-text-primary text-left font-normal">I help brands and businesses level up their online presence</motion.h1>
