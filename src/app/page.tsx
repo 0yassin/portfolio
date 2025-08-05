@@ -23,7 +23,7 @@ export default function Home() {
 
     }
   )
-  const y1 = useTransform(sec2scrollProgress, [0,1], [200,0])
+  const y1 = useTransform(sec2scrollProgress, [0,1], [300,-100])
 
   // for badges
   const {scrollYProgress: sec3scrollProgress} = useScroll({
@@ -45,8 +45,9 @@ const badgeClass = "flex justify-start gap-6 font-semibold bg-badge py-4 px-6 te
     <>
     <ReactLenis root />
     <div className="min-h-screen  bg-background pt-8 font-sans text-xl font-medium tracking-normal pb-64">
-
       <Navbar/>
+
+
 
       <section className="pt-28">
           <div className=" py-12 flex flex-col items-center gap-16">
@@ -75,36 +76,6 @@ const badgeClass = "flex justify-start gap-6 font-semibold bg-badge py-4 px-6 te
           <motion.h1 style={{y:text_y}} className="text-6xl text-text-primary font-semibold">Tools i use</motion.h1>
           <div className=" mx-6 grid grid-cols-3 grid-rows-2 max-w-[800px] text-2xl gap-4 mt-16  " >
 
-
-             {/* <motion.div style={{y:badge1_y}} className={badgeClass}>
-              <img className="w-12 h-12 " src="/IconJS.svg" />
-              <span>Javascript</span>
-            </motion.div>
-
-             <motion.div style={{y:badge2_y}} className={badgeClass}>
-              <img src="/IconTS.svg" className="w-12 h-12" />
-              <span>Typescript</span>
-            </motion.div>
-
-             <motion.div style={{y:badge3_y}} className={badgeClass}>
-              <img src="/Iconreact.svg" className="w-12 h-12" />
-              <span>ReactJS</span>
-            </motion.div>
-
-             <motion.div style={{y:badge4_y}} className={badgeClass}>
-              <img src="/next.svg" className="w-12 h-12 "/>
-              <span>NextJS</span>
-            </motion.div>
-
-             <motion.div style={{y:badge5_y}} className={badgeClass}>
-              <img className="w-12 h-12 " src="/IconPY.svg" />
-              <span>Python</span>
-            </motion.div>
-
-             <motion.div style={{y:badge6_y}} className={badgeClass}>
-              <img className="w-12 h-12 " src="/IconCS.svg" />
-              <span>Csharp</span>
-            </motion.div> */}
             <Badge y={badge1_y} icon="/IconJS.svg">
                 <span>Javascript</span>
             </Badge>
