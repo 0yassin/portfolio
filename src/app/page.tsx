@@ -42,7 +42,7 @@ export default function Home() {
     offset: ["start end", "end start"],
   });
 
-  const y1 = useTransform(sec2scrollProgress, [0, 1], [300, -100]);
+  const y1 = useTransform(sec2scrollProgress, [0, 1], [150, -100]);
 
 
 
@@ -54,7 +54,7 @@ export default function Home() {
   const badge5_y = useTransform(sec3scrollProgress, [0, 0.5, 1], [200, 0, -125]);
   const badge6_y = useTransform(sec3scrollProgress, [0, 0.5, 1], [225, 0, -150]);
   const grid_y = useTransform(sec3scrollProgress, [0,0.5,1], [100,0,-100])
-  const text_y = useTransform(sec3scrollProgress, [0, 0.5, 0.85], [100, 0, -200]);
+  const text_y = useTransform(sec3scrollProgress, [0, 0.5, 1], [100, 0, -200]);
 
   return (
     <>
@@ -118,6 +118,8 @@ export default function Home() {
             </motion.div>
           </div>
         </section>
+
+
       </div>
     </>
   );

@@ -10,11 +10,11 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-primary: #928DAB;
-  --color-background: #1F1C2C;
-  --color-text-primary: #ffffffCC;
-  --color-text-secondary: #1F1C2C;
-  --color-badge: #353535;
+  --color-primary: #ffffff;
+  --color-background: #1D1D1D;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #000000;
+  --color-badge: 	#222222;
   
 }
 
