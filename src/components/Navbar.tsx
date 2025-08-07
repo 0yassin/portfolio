@@ -12,8 +12,13 @@ export default function Navbar(){
           
           <Animlink href='h'>About</Animlink>
         </div>
-        <motion.button  className="max-[430px]:px-6 bg-primary text-text-secondary font-semibold h-full px-12 rounded-full mr-2 hover:bg-text-primary  cursor-pointer transition-all" whileTap={{scale:0.75}}>
-            Contact Me
+        <motion.button  className="max-[430px]:px-6  overflow-hidden relative group inline-flex justify-center items-center bg-primary text-text-secondary font-semibold h-full px-12 rounded-full mr-2 hover:bg-text-primary  cursor-pointer transition-all">
+            <span className="transition-all duration-200 group-hover:-translate-x-5">
+                Contact me
+            </span>
+            <span className="absolute right-4 opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-200">              
+              <img className="h-6 w-6 -rotate-90" src={'/downarrow.svg'} />
+            </span>
         </motion.button>
 
       </motion.nav>
