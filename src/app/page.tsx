@@ -64,7 +64,7 @@ export default function Home() {
   return (
     <>
       <ReactLenis root />
-      <div className="min-h-screen bg-background font-sans text-base md:text-xl font-medium tracking-normal">
+      <div className="min-h-screen pt-8 bg-background font-sans text-base md:text-xl font-medium tracking-normal">
         <Navbar />
         <section className="pt-28 px-4 sm:px-8">
           <div className="py-12 flex flex-col items-center gap-16 text-center">
