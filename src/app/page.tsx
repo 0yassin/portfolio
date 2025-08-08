@@ -73,6 +73,7 @@ export default function Home() {
             </motion.div>
 
             <motion.button
+              onClick={()=>{sec2Rref.current?.scrollIntoView({behavior:'smooth'})}}
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay:0.9, duration:0.2 }}

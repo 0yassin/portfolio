@@ -19,7 +19,7 @@ export default function Animlink({ children, href }: props){
       initial="initial"
       whileHover="hovered"
       href={href}
-      className="hover:text-text-primary relative block overflow-hidden whitespace-nowrap text-xl "
+      className="hover:text-text-primary relative block overflow-hidden whitespace-nowrap text-base md:text-xl "
       style={{
         lineHeight: 1,
       }}
