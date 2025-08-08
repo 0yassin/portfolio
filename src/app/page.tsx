@@ -32,8 +32,8 @@ export default function Home() {
   });
 
 
-  const sec2Rref = useRef(null);
-  const sec3Rref = useRef(null);
+  const sec2Rref = useRef<HTMLDivElement>(null)
+  const sec3Rref = useRef<HTMLDivElement>(null)
 
   const { scrollYProgress: sec2scrollProgress } = useScroll({
     target: sec2Rref,
@@ -66,7 +66,7 @@ export default function Home() {
       <ReactLenis root />
       <div className="min-h-screen pt-8 bg-background font-sans text-base md:text-xl font-medium tracking-normal">
         <Navbar />
-        <section className="pt-28 px-4 sm:px-8">
+        <section className="pt-28 px-4 md:px-8">
           <div className="py-12 flex flex-col items-center gap-16 text-center">
             <motion.div className="text-5xl sm:text-5xl md:text-6xl text-text-primary font-semibold">
               <AnimHeading>I'm yassin, I make websites</AnimHeading>
