@@ -17,9 +17,9 @@ export default function Navbar({animate=true}:props){
 
           <Animlink href='/'>Home</Animlink>
           
-          <Animlink href='/'>About</Animlink>
+          <Animlink href='/about'>About</Animlink>
         </div>
-        <motion.button  className="max-[430px]:px-6  overflow-hidden relative group inline-flex justify-center items-center bg-primary text-text-secondary font-semibold h-full px-12 rounded-full mr-2 hover:bg-text-primary  cursor-pointer transition-all">
+        <motion.button onClick={(e)=>{window.location.href = "/contact";e.preventDefault()}}  className="max-[430px]:px-6  overflow-hidden relative group inline-flex justify-center items-center bg-primary text-text-secondary font-semibold h-full px-12 rounded-full mr-2 hover:bg-text-primary  cursor-pointer transition-all" >
             <span className="transition-all duration-200 group-hover:-translate-x-5">
                 Contact me
             </span>

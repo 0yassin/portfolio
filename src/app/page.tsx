@@ -202,6 +202,7 @@ export default function Home() {
           <div className="flex-col flex justify-center items-center gap-12">
           <span className="text-4xl sm:text-5xl md:text-6xl text-text-primary font-semibold">let's work together</span>
               <motion.button
+              onClick={(e)=>{window.location.href = "/contact";e.preventDefault()}}
               className="group relative inline-flex items-center justify-center bg-primary text-text-secondary font-semibold py-5 px-16 w-fit rounded-full cursor-pointer overflow-hidden duration-200"
               >
               <span className="duration-200 group-hover:-translate-x-5">
